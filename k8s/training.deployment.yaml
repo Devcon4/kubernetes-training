@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dummy-website
+  labels:
+    app: dummy-website
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: dummy-website
+  template:
+    metadata:
+      labels:
+        app: dummy-website
+    spec:
+      containers:
+      - name: dummy-website
+        image: devync/dummy-website
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80

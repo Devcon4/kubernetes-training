@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dummy-website
+spec:
+  selector:
+    app: dummy-website
+  type: LoadBalancer
+  ports:
+  - port: 4210
+    targetPort: 80

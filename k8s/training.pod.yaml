@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dummy-website
+  labels:
+    name: dummy-website
+spec:
+  containers:
+  - name: dummy-website
+    image: devync/dummy-website
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80

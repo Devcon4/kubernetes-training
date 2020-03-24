@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <body class="background">
+        <h1>It works!</h1>
+    </body>
+
+    <style>
+        .background {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: lighter;
+            font-size: 24px;
+            font-family: roboto;
+            background: linear-gradient(320deg, #1de1ae, #1d5ee1, #e11dc0);
+            background-size: 600% 600%;
+
+            -webkit-animation: AnimationName 8s ease infinite;
+            -moz-animation: AnimationName 8s ease infinite;
+            animation: AnimationName 8s ease infinite;
+
+            
+        }
+
+        @-webkit-keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @-moz-keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+    </style>
+</html>
